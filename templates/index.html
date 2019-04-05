@@ -73,6 +73,12 @@
            </div>
           </div>
         </div> 
+        <div class="row">
+          <p>Accicent By Causes : The data analysed here is from accidents that happened from 1960-2019 . We have excluded any Military airplanes.The classification was based on the keywords found in Summary informaiton.
+             Only Accidents with the Summary was considered.This result may need further analysis as weather and mechanical failure also could have contributed to Pilot error.
+          </p>
+
+        </div>
     
         <div class="row">
            <div class="col-md-6">
@@ -92,8 +98,8 @@
     
   
     <div class= "row">
-        <div class="col-md-5">
-          <div id="gauge"></div>
+        <div class="col-md-6">
+          <div id="word_cloud"></div>
         </div>
       </div>
 
@@ -104,11 +110,32 @@
 
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="{{ url_for('static', filename='js/app.js') }}"></script> 
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../static/css/jqcloud.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='js/jqcloud.min.js') }}"></script> 
+
+  <!-- <sript>
+      $(document).ready(function () {
+        $.ajax({url: '/cloud',success:function(data)
+      {
+        var words_data =$.parseJSON(data);
+        $('#word_cloud').jQCloud(words_data,{
+           width:800,
+           height:600
+          
+        });
+      }
+      });
+      }); -->
+
   <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
   
 </div>

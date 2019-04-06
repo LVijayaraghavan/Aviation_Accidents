@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Insights to Aviation Accidents</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<style>
+.fontstyle
+{ 
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"  style="font-size: 24px; color:white;" >Insight Into Avaiation Accidents</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse" style="float:right">
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="index.html">Home</a></li> -->
+              <li><a  href="/Data_summ/" style="font-size: 18px; color:white;"><strong>Data Summary</strong></a></li>
+              <li><a  href="/Crash_locations/" style="font-size: 18px; color:white;"><strong>Crash Location</strong></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+<br/><br/>
+  <div class="container-fluid">
+    <!-- <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Aviation Accidents</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-12">
+        <p id="dataset">This dataset is collected from two different sources and combined . The dataset is pulled from kaggle and from www.planecrashinfo.com . 
+          This includes all civil and military aviation accidents from the year 1908-2019</p>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-md-6">
+          <div></div>
+        <!-- <div class="well"> -->
+          <p >SELECT Year:<select id="selDataset" onchange="optionChanged(this.value)" ></select></p>
+        </div>
+         
+            <div class="col-sm-6" >
+                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            </div>
+        
+      
+       <div id="histtab" >
+      <div class="row">
+        <div class="col-md-12">
+            <table id="YrlyAccidents" class="table table-striped table-bordered">
+              <tbody id=myTable>
+                <thead>
+                  <tr>
+                    <th class="table-head">Date</th>
+                    <th class="table-head">Location</th>
+                    <th class="table-head">Aboard</th>
+                    <th class="table-head">Fatalities</th>
+                    <th class="table-head">Operator</th>
+                    <th class="table-head">Type</th>
+                    <th clss="table-head">Summary</th>
+                  </tr>
+                </thead>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+    
+  
+ 
+
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+      </script>
+  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
+      
+  
+</div>
+</body>
+
+</html>

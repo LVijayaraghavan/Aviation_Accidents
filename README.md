@@ -12,6 +12,8 @@ In this Project we are using the data gathered from a combination of 2 sources (
  Trends in aircraft Accidents and also Map and plot the aircrash sites.
  
 ## Visualisations using plotly.js , leaflet.js 
+
+![Causes](
 ![Visualisations](https://github.com/LVijayaraghavan/Aviation_Accidents/blob/master/Images/bottom%20of%20main%20page.png)
 
 

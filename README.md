@@ -17,9 +17,11 @@ In this Project we are using the data gathered from a combination of 2 sources (
 ![Visualisations](https://github.com/LVijayaraghavan/Aviation_Accidents/blob/master/Images/bottom%20of%20main%20page.png)
 
 ## Data Table built using Data collected from Webscraping ,using Javascript and Html
-![DataTable](
+![DataTable](https://github.com/LVijayaraghavan/Aviation_Accidents/blob/master/Images/webscraping.png)
 
-
-Use Web scraping and datasets from 1908 till date to collect aviation accident details, and visualize the crash sites using Leaflet.js and determine the leading cause for accidents 
-Technologies Used:  Flask, Leaflet.js, JavaScript, SQLite, Pandas, HTML, CSS
+## Visualising the crash site in the world map using Leaflet.js . The number indicates the number of crashes in that location
+![Map](https://github.com/LVijayaraghavan/Aviation_Accidents/blob/master/Images/leaflet%20world%20map.png)
+ 
+# Technologies Used:  
+    Flask, Leaflet.js, JavaScript, SQLite, Pandas, HTML, CSS
 

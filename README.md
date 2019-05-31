@@ -12,7 +12,7 @@ In this Project we are using the data gathered from a combination of 2 sources (
  Trends in aircraft Accidents and also Map and plot the aircrash sites.
  
 ## Visualisations using plotly.js , leaflet.js 
-![Visualisations](Images\top of main page.png)
+![Visualisations](https://github.com/LVijayaraghavan/Aviation_Accidents/blob/master/Images/bottom%20of%20main%20page.png)
 
 
 Use Web scraping and datasets from 1908 till date to collect aviation accident details, and visualize the crash sites using Leaflet.js and determine the leading cause for accidents 

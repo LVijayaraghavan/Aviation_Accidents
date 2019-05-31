@@ -13,7 +13,7 @@ In this Project we are using the data gathered from a combination of 2 sources (
  
 ## Visualisations using plotly.js , leaflet.js 
 
-![Causes](
+![Causes](https://github.com/LVijayaraghavan/Aviation_Accidents/blob/master/Images/top%20of%20main%20page.png)
 ![Visualisations](https://github.com/LVijayaraghavan/Aviation_Accidents/blob/master/Images/bottom%20of%20main%20page.png)
 
 
